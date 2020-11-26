@@ -220,13 +220,13 @@ public class PlatformerCharacterControlState extends BaseAppState implements Act
     }
 
     if (movementDirection.x < 0) {
-      sprite.flipCoords(true);
+//      sprite.flipXCoords(true);
 
     } else if (movementDirection.x > 0) {
-      sprite.flipCoords(false);
+//      sprite.flipXCoords(false);
 
     } else {
-      sprite.flipCoords(false);
+//      sprite.flipXCoords(false);
 
     }
 

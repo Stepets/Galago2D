@@ -40,7 +40,7 @@ public class SpriteAnimationControl extends AbstractControl {
           currentIndex = 0;
         }
         elapsedeTime = 0f;
-        sprite.showIndex(currentAnimation[currentIndex]);
+//        sprite.showIndex(currentAnimation[currentIndex]);
       }
 
     }
@@ -64,7 +64,7 @@ public class SpriteAnimationControl extends AbstractControl {
 
     if (seq != null && !name.equals(currentAnimationName)) {
       currentAnimationName = name;
-      sprite.showIndex(0);
+//      sprite.showIndex(0);
       currentAnimation = seq;
       animationFrameTime = timePerFrame;
       currentIndex = 0;

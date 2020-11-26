@@ -157,7 +157,7 @@ public class RigidBodyControl2D extends AbstractControl implements PhysicsContro
   public void setPhysicsRotation(final Body physicBody) {
     final Transform transform = physicBody.getTransform();
 
-    final float rotation = Converter.toFloat(transform.getRotation());
+    final float rotation = Converter.toFloat(transform.getRotation().toRadians());
 
     final TempVars tempVars = TempVars.get();
     final Quaternion quaternion = tempVars.quat1;
@@ -220,7 +220,7 @@ public class RigidBodyControl2D extends AbstractControl implements PhysicsContro
 
   public float getPhysicsRotation() {
 //        clearForces();
-    return (float) this.body.getTransform().getRotation();
+    return (float) this.body.getTransform().getRotation().toRadians();
   }
 
   public void rotate(float radians) {
